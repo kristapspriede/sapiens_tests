@@ -1,0 +1,8 @@
+SELECT * 
+FROM public.policy  
+WHERE (start_date 
+BETWEEN '2019-10-14'AND '2019-11-14') 
+OR (expiration_date 
+BETWEEN '2019-10-14' AND '2019-11-14') 
+OR (start_date <= '2019-10-14' AND expiration_date >= '2019-11-14')
+OR (start_date >= '2019-10-14' AND expiration_date <= '2019-11-14');

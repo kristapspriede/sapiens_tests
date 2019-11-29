@@ -1,0 +1,5 @@
+SELECT public.policy.policy_id AS policy, MAX(policy_version_status_number) AS latest_policy_version
+FROM public.policy
+	JOIN public.policy_version
+		ON public.policy_version.policy_id = public.policy.policy_id
+GROUP BY public.policy.policy_id;

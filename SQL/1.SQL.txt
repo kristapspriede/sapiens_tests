@@ -1,0 +1,4 @@
+SELECT *
+FROM public.policy
+WHERE 
+start_date < '2019-11-14';

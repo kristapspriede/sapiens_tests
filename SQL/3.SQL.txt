@@ -1,0 +1,5 @@
+SELECT public.party.party_id, COUNT(*) AS Count 
+FROM public.party
+	JOIN public.policy
+		ON public.policy.party_id = public.party.party_id
+GROUP BY public.party.party_id;

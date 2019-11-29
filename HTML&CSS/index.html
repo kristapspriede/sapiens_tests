@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+  </head>
+
+  <body>
+
+    <div class="container">
+        <div class="wrapper">
+            <form class="form-signin">       
+              <h2 class="form-signin-heading">Fill in the data</h2>
+              <input type="text" class="form-control"placeholder=" First Name"/>
+              <input type="text" class="form-control middle" placeholder=" Last Name"/>
+              <input type="text" class="form-control middle" placeholder=" Email Address"/>
+              <input type="password" style="margin-bottom: -1px;" class="form-control middle" placeholder=" Password"/>
+              <input type="password" class="form-control" name="password" placeholder=" Confirm Password"/>
+              <br>
+              <input type="text" class="form-control"placeholder=" Street"/>
+              <input type="text" class="form-control middle" placeholder=" City"/>
+              <div class="form-group" placeholder="Country">
+                <select class="form-control middle">
+                  <option selected disabled style="color: #555;">Country</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              </div>
+              <input type="text" class="form-control bottom" placeholder=" Postcode"/>     
+              <div class="check">
+                  <input type="checkbox" value="remember-me"> Accept terms and conditions
+              </div> 
+              <button class="btn btn-lg btn-primary btn-block" type="submit">Register</button>   
+            </form>
+          </div>
+    </div>
+  </body>
+</html>
